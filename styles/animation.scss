@@ -1,0 +1,72 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e6d21e;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  stroke-dasharray: 1234px;
+  stroke-dashoffset: 1234px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 1083px;
+  stroke-dashoffset: 1083px;
+  animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#third {
+  stroke-dashoffset: 1018px;
+  stroke-dasharray: 1018px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#fourth {
+  stroke-dasharray: 1019px;
+  stroke-dashoffset: 1019px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#fifth {
+  stroke-dasharray: 502px;
+  stroke-dashoffset: 502px;
+  animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#sixth {
+  stroke-dasharray: 507px;
+  stroke-dashoffset: 507px;
+  animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+
+#seventh {
+  stroke-dasharray: 424px;
+  stroke-dashoffset: 424px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+svg {
+  animation: fill 1s ease-in forwards 1.2s;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #355bbd;
+  }
+}

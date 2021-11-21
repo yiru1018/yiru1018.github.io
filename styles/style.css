@@ -51,4 +51,15 @@ h2 {
   -webkit-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
+
+@media screen and (max-width: 400px) {
+  main {
+    margin: 10px 20px;
+  }
+  .udemy img,
+  .note img {
+    width: 70vw;
+    margin: 1rem 0.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
